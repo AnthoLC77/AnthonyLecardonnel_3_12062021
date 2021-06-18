@@ -1,0 +1,8 @@
+@mixin backgroundCard{
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 20px 20px 0 0;;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
