@@ -34,7 +34,9 @@
 }
 
 /******************VARIABLES**************/
-
+$color-primaire : #9356dc;
+$color-secondaire: #ff79da;
+$color-tertiaire: #99E2D0;
 $bg-btn : linear-gradient(177deg,#ff79da 0%, #9356dc 100%);
 
 
@@ -390,7 +392,7 @@ main{
         justify-content: space-between;
         align-items: center;
         margin-bottom: 35px;
-        
+
 
         &__title{
             font-family: 'Shrikhand', cursive;
@@ -398,13 +400,22 @@ main{
             font-size: 1.6em;  
         }
 
-        img{
-            width: 25px;
-            height: 30px;
+        .iconeHeart{
             position: relative;
             right: 30px;
+            width: 25px;
+            fill: transparent;
+            stroke-width: 5px;
+            stroke: black;
+              
+              
+            &:hover{
+                fill: $color-primaire;
+            }
         }
     }
+}
+
 
     .menu{
         padding: 15px;
@@ -548,4 +559,3 @@ main{
 
         }
     }
-}

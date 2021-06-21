@@ -493,18 +493,24 @@ main .menuF__title {
   font-size: 1.6em;
 }
 
-main .menuF img {
-  width: 25px;
-  height: 30px;
+main .menuF .iconeHeart {
   position: relative;
   right: 30px;
+  width: 25px;
+  fill: transparent;
+  stroke-width: 5px;
+  stroke: black;
 }
 
-main .menu {
+main .menuF .iconeHeart:hover {
+  fill: #9356dc;
+}
+
+.menu {
   padding: 15px;
 }
 
-main .menu__titreUnderline {
+.menu__titreUnderline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -514,14 +520,14 @@ main .menu__titreUnderline {
           flex-direction: column;
 }
 
-main .menu__titreUnderline--titre {
+.menu__titreUnderline--titre {
   font-size: 1em;
   font-weight: 100;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
 }
 
-main .menu__titreUnderline--traitVert {
+.menu__titreUnderline--traitVert {
   width: 43px;
   height: 4px;
   background: #99e2d0;
@@ -529,11 +535,11 @@ main .menu__titreUnderline--traitVert {
   margin: 5px 0 15px 0;
 }
 
-main .menu__titre {
+.menu__titre {
   margin-bottom: 15px;
 }
 
-main .menu__choix1 {
+.menu__choix1 {
   background: white;
   border-radius: 15px;
   margin-bottom: 15px;
@@ -544,23 +550,23 @@ main .menu__choix1 {
           animation: animPop 1500ms 0ms;
 }
 
-main .menu__choix1--para1 {
+.menu__choix1--para1 {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-main .menu__choix1--para2 {
+.menu__choix1--para2 {
   font-size: 1em;
   font-weight: 100;
   color: rgba(0, 0, 0, 0.7);
 }
 
-main .menu__choix1--prix {
+.menu__choix1--prix {
   font-weight: 900;
 }
 
-main .menu__choix2 {
+.menu__choix2 {
   background: white;
   border-radius: 15px;
   margin-bottom: 15px;
@@ -571,23 +577,23 @@ main .menu__choix2 {
           animation: animPop 2000ms 0ms;
 }
 
-main .menu__choix2--para1 {
+.menu__choix2--para1 {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-main .menu__choix2--para2 {
+.menu__choix2--para2 {
   font-size: 1em;
   font-weight: 100;
   color: rgba(0, 0, 0, 0.7);
 }
 
-main .menu__choix2--prix {
+.menu__choix2--prix {
   font-weight: 900;
 }
 
-main .menu__choix3 {
+.menu__choix3 {
   background: white;
   border-radius: 15px;
   margin-bottom: 15px;
@@ -598,19 +604,19 @@ main .menu__choix3 {
           animation: animPop 2500ms 0ms;
 }
 
-main .menu__choix3--para1 {
+.menu__choix3--para1 {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-main .menu__choix3--para2 {
+.menu__choix3--para2 {
   font-size: 1em;
   font-weight: 100;
   color: rgba(0, 0, 0, 0.7);
 }
 
-main .menu__choix3--prix {
+.menu__choix3--prix {
   font-weight: 900;
 }
 
@@ -640,7 +646,7 @@ main .menu__choix3--prix {
   }
 }
 
-main .menu__sHeader {
+.menu__sHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -649,7 +655,7 @@ main .menu__sHeader {
           justify-content: space-between;
 }
 
-main .button {
+.button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,7 +668,7 @@ main .button {
   margin-top: 20px;
 }
 
-main .button__commander {
+.button__commander {
   width: 100px;
   background: #ff79da;
   background: linear-gradient(177deg, #ff79da 0%, #9356dc 100%);
