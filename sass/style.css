@@ -27,8 +27,8 @@
 
 .lettre {
   color: black;
-  font-size: 80px;
-  letter-spacing: 15px;
+  font-size: 35px;
+  letter-spacing: 10px;
   -webkit-animation: flash 1.2s linear infinite;
           animation: flash 1.2s linear infinite;
 }
@@ -707,8 +707,8 @@ main .menuF .iconeHeart:hover {
           box-shadow: 0px 3px 12px -7px rgba(0, 0, 0, 0.75);
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: animPop 1500ms 0ms;
-          animation: animPop 1500ms 0ms;
+  -webkit-animation: animPop 1500ms 3s;
+          animation: animPop 1500ms 3s;
 }
 
 .menu .barre1:hover > .box, .menu .barre2:hover > .box, .menu .barre3:hover > .box {
@@ -794,13 +794,13 @@ main .menuF .iconeHeart:hover {
 }
 
 .menu .barre2 {
-  -webkit-animation: animPop 2000ms 0ms;
-          animation: animPop 2000ms 0ms;
+  -webkit-animation: animPop 2000ms 3s;
+          animation: animPop 2000ms 3s;
 }
 
 .menu .barre3 {
-  -webkit-animation: animPop 2500ms 0ms;
-          animation: animPop 2500ms 0ms;
+  -webkit-animation: animPop 2500ms 3s;
+          animation: animPop 2500ms 3s;
 }
 
 @-webkit-keyframes animPop {

@@ -63,8 +63,8 @@ $bg-btn : linear-gradient(177deg,#ff79da 0%, #9356dc 100%);
 
 .lettre{
     color: black;
-    font-size: 80px;
-    letter-spacing: 15px;
+    font-size: 35px;
+    letter-spacing: 10px;
     animation: flash 1.2s linear infinite;
 }
 
@@ -566,7 +566,7 @@ main{
 
         .barre1, .barre2, .barre3{
             @include cardMenu;
-            animation: animPop 1500ms 0ms;
+            animation: animPop 1500ms 3s;
 
             &:hover > .box{
                 width: 5em;
@@ -636,11 +636,11 @@ main{
 
 
         .barre2{
-            animation: animPop 2000ms 0ms;
+            animation: animPop 2000ms 3s;
         }
         
         .barre3{
-            animation: animPop 2500ms 0ms;
+            animation: animPop 2500ms 3s;
         }
 
 
