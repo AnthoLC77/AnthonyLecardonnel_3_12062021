@@ -6,6 +6,29 @@
   margin: 0;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  opacity: 1;
+  -webkit-animation: popBody 3s linear 0s;
+          animation: popBody 3s linear 0s;
+}
+
+.containerR {
+  opacity: 1;
+  -webkit-animation: popBody 3s linear 0s;
+          animation: popBody 3s linear 0s;
+  background: #f6f6f6;
+}
+
+@font-face {
+  font-family: Shrikhand;
+  src: url("Shrikhand-Regular.ttf");
+}
+
+/**********************LOADER ALL PAGES ******************/
 .loader {
   position: absolute;
   width: 100%;
@@ -27,7 +50,7 @@
 
 .lettre {
   color: black;
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: 10px;
   -webkit-animation: flash 1.2s linear infinite;
           animation: flash 1.2s linear infinite;
@@ -131,16 +154,6 @@
           animation-delay: 1s;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-.container {
-  opacity: 1;
-  -webkit-animation: popBody 3s linear 0s;
-          animation: popBody 3s linear 0s;
-}
-
 @-webkit-keyframes popBody {
   0% {
     opacity: 0;
@@ -159,11 +172,7 @@ body {
   }
 }
 
-@font-face {
-  font-family: Shrikhand;
-  src: url("Shrikhand-Regular.ttf");
-}
-
+/***********************HEADER INDEX **********************/
 header {
   text-align: center;
 }
@@ -237,6 +246,7 @@ header .heading__bouton {
   font-weight: 100;
 }
 
+/****************************MENU INDEX***********************/
 .section1 {
   margin-top: 40px;
   display: -webkit-box;
@@ -294,7 +304,7 @@ header .heading__bouton {
   font-size: 1.0em;
 }
 
-/************************MENU2*********************/
+/************************MENU2 INDEX*********************/
 .section2 {
   display: -ms-grid;
   display: grid;
@@ -545,6 +555,7 @@ header .heading__bouton {
   bottom: 35px;
 }
 
+/*******************FOOTER INDEX *******************/
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,6 +613,7 @@ header .heading__bouton {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 13px;
+  background: #FFF;
 }
 
 .headerF__flecheLeft {
@@ -626,6 +638,7 @@ main {
   bottom: 55px;
   background: #f6f6f6;
   border-radius: 40px 40px 0 0;
+  height: 100%;
 }
 
 main .menuF {
@@ -838,26 +851,42 @@ main .menuF .iconeHeart:hover {
           justify-content: space-between;
 }
 
-.button {
+.btnCommande {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.button__commander {
-  width: 100px;
-  background: #ff79da;
+.btnCommande span {
+  margin-top: 20px;
+  padding: 12px 30px;
   background: linear-gradient(177deg, #ff79da 0%, #9356dc 100%);
-  text-align: center;
   border-radius: 20px 20px;
-  padding: 12px 30px 12px 30px;
   color: white;
+  font-weight: 100;
 }
+
+/* .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        
+        &__commander{
+        width: 100px;
+        background: #ff79da;
+        background: $bg-btn;
+        text-align: center;
+        border-radius: 20px 20px;
+        padding: 12px 30px 12px 30px;
+        color: white;
+
+        }
+    }*/
 /*# sourceMappingURL=style.css.map */

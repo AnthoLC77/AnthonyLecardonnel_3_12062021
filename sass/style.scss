@@ -49,6 +49,30 @@ $bg-btn : linear-gradient(177deg,#ff79da 0%, #9356dc 100%);
     margin: 0;
 }
 
+body{
+    font-family:'Roboto', sans-serif;
+}
+
+.container{
+    opacity: 1;
+    animation: popBody 3s linear 0s;
+}
+
+.containerR{
+    opacity: 1;
+    animation: popBody 3s linear 0s;
+    background: #f6f6f6;
+
+}
+
+@font-face {
+    font-family: Shrikhand;
+    src: url("Shrikhand-Regular.ttf");
+}
+
+
+/**********************LOADER ALL PAGES ******************/
+
 .loader{
     position: absolute;
     width: 100%;
@@ -63,7 +87,7 @@ $bg-btn : linear-gradient(177deg,#ff79da 0%, #9356dc 100%);
 
 .lettre{
     color: black;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 10px;
     animation: flash 1.2s linear infinite;
 }
@@ -82,8 +106,7 @@ $bg-btn : linear-gradient(177deg,#ff79da 0%, #9356dc 100%);
     100%{
         color: $color-secondaire;
         text-shadow: 0 0 7px $color-secondaire;
-    }
-    
+    } 
 }
 
 @keyframes spin {
@@ -95,7 +118,6 @@ $bg-btn : linear-gradient(177deg,#ff79da 0%, #9356dc 100%);
         opacity: 1;
         
     }
-    
 }
 
 .lettre:nth-child(1){
@@ -138,15 +160,6 @@ $bg-btn : linear-gradient(177deg,#ff79da 0%, #9356dc 100%);
     animation-delay: 1s;
 }
 
-body{
-    font-family:'Roboto', sans-serif;
-}
-
-.container{
-    opacity: 1;
-    animation: popBody 3s linear 0s;
-}
-
 @keyframes popBody {
 
     0%{
@@ -159,10 +172,7 @@ body{
     
 }
 
-@font-face {
-    font-family: Shrikhand;
-    src: url("Shrikhand-Regular.ttf");
-}
+/***********************HEADER INDEX **********************/
 
 header{
     text-align: center;
@@ -221,7 +231,7 @@ header{
     }
 }
 
-//****************************MENU***********************
+/****************************MENU INDEX***********************/
 
 .section1{
     margin-top: 40px;
@@ -269,7 +279,7 @@ header{
     }
 }
 
-/************************MENU2*********************/
+/************************MENU2 INDEX*********************/
 
 .section2{
     display: grid;
@@ -425,6 +435,8 @@ header{
     }
 }
 
+/*******************FOOTER INDEX *******************/
+
 .footer{
     display: flex;
     flex-direction: column;
@@ -469,6 +481,7 @@ header{
     align-items: center;
     justify-content: center;
     padding: 13px;
+    background: #FFF;
 
     &__flecheLeft{
         width: 20px;
@@ -497,7 +510,8 @@ main{
     position: relative;
     bottom: 55px;
     background: #f6f6f6;
-    border-radius: 40px 40px 0 0;   
+    border-radius: 40px 40px 0 0;
+    height: 100%;
 
     .menuF{
         position: relative;
@@ -633,8 +647,6 @@ main{
             }
         }
 
-
-
         .barre2{
             animation: animPop 2000ms 3s;
         }
@@ -642,8 +654,6 @@ main{
         .barre3{
             animation: animPop 2500ms 3s;
         }
-
-
 
         @keyframes animPop {
             0%{
@@ -664,7 +674,28 @@ main{
         }
     }
 
-    .button{
+    .btnCommande{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span{
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: $bg-btn;
+            border-radius: 20px 20px;
+            color: white;
+            font-weight: 100;
+        }
+    }
+
+
+
+
+
+
+
+   /* .button{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -680,4 +711,4 @@ main{
         color: white;
 
         }
-    }
+    }*/
