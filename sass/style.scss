@@ -55,12 +55,12 @@ body{
 
 .container{
     opacity: 1;
-    animation: popBody 3s linear 0s;
+    animation: popBody 1s linear 0s;
 }
 
 .containerR{
     opacity: 1;
-    animation: popBody 3s linear 0s;
+    animation: popBody 1s linear 0s;
     background: #f6f6f6;
 
 }
@@ -82,7 +82,7 @@ body{
     justify-content: center;
     align-items: center;
     opacity: 0;
-    animation: spin 3s;
+    animation: spin 1s;
 }
 
 .lettre{
@@ -534,13 +534,18 @@ main{
             right: 30px;
             width: 25px;
             fill: transparent;
-            stroke-width: 5px;
+            stroke-width: 10px;
             stroke: black;
+            overflow: hidden;
+            z-index: 0;
               
               
-            &:hover{
-                fill: $color-primaire;
-            }
+        &:hover{
+            fill: $color-primaire;
+            transition: all 1s ease-in-out;
+        }
+
+
         }
     }
 }
@@ -638,7 +643,8 @@ main{
                     transition: transform 700ms;
                     transform: rotate(-360deg);
                     margin: auto;
-                    
+                    width: 30px;
+                    height: 30px;
                     border-radius: 50%;
                     background-color: #FFF;
                     color: $color-tertiaire;

@@ -12,14 +12,14 @@ body {
 
 .container {
   opacity: 1;
-  -webkit-animation: popBody 3s linear 0s;
-          animation: popBody 3s linear 0s;
+  -webkit-animation: popBody 1s linear 0s;
+          animation: popBody 1s linear 0s;
 }
 
 .containerR {
   opacity: 1;
-  -webkit-animation: popBody 3s linear 0s;
-          animation: popBody 3s linear 0s;
+  -webkit-animation: popBody 1s linear 0s;
+          animation: popBody 1s linear 0s;
   background: #f6f6f6;
 }
 
@@ -44,8 +44,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   opacity: 0;
-  -webkit-animation: spin 3s;
-          animation: spin 3s;
+  -webkit-animation: spin 1s;
+          animation: spin 1s;
 }
 
 .lettre {
@@ -668,12 +668,16 @@ main .menuF .iconeHeart {
   right: 30px;
   width: 25px;
   fill: transparent;
-  stroke-width: 5px;
+  stroke-width: 10px;
   stroke: black;
+  overflow: hidden;
+  z-index: 0;
 }
 
 main .menuF .iconeHeart:hover {
   fill: #9356dc;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .menu {
@@ -801,6 +805,8 @@ main .menuF .iconeHeart:hover {
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
   margin: auto;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #FFF;
   color: #99E2D0;
