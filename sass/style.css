@@ -237,13 +237,21 @@ header .heading__para {
 }
 
 header .heading__bouton {
-  width: 50%;
+  padding: 15px 25px;
   margin-top: 30px;
   padding: 12px 17px;
   background: linear-gradient(177deg, #ff79da 0%, #9356dc 100%);
   border-radius: 20px 20px;
   color: white;
   font-weight: 100;
+}
+
+header .heading__bouton:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+  font-size: 1.1em;
 }
 
 /****************************MENU INDEX***********************/
@@ -256,16 +264,29 @@ header .heading__bouton {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section1 h1 {
+  margin: 0 0 15px 15px;
+}
+
+.section1 .box_choix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.section1 h1 {
-  margin-bottom: 30px;
-}
-
-.section1 .choix {
+.section1 .box_choix .choix {
   width: 80%;
   background: rgba(246, 246, 246, 0.2);
   padding: 20px 10px;
@@ -281,11 +302,11 @@ header .heading__bouton {
           box-shadow: 0px 3px 12px -7px rgba(0, 0, 0, 0.75);
 }
 
-.section1 .choix--background {
+.section1 .box_choix .choix--background {
   background: rgba(147, 86, 220, 0.2);
 }
 
-.section1 .choix__number {
+.section1 .box_choix .choix__number {
   position: relative;
   left: -20px;
   padding: 4px 8px;
@@ -294,13 +315,13 @@ header .heading__bouton {
   color: white;
 }
 
-.section1 .choix__image {
+.section1 .box_choix .choix__image {
   width: 18px;
   height: 20px;
   margin-right: 20px;
 }
 
-.section1 .choix__heading {
+.section1 .box_choix .choix__heading {
   font-size: 1.0em;
 }
 
@@ -315,7 +336,7 @@ header .heading__bouton {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  row-gap: 15px;
+  row-gap: 20px;
   margin-bottom: 70px;
 }
 
@@ -343,8 +364,25 @@ header .heading__bouton {
   color: black;
 }
 
+.section2 .card1:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+}
+
 .section2 .card1__images {
   background-image: url(../Maquettes/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -356,14 +394,23 @@ header .heading__bouton {
 
 .section2 .card1__images--nouveau {
   position: relative;
-  left: 240px;
-  top: 25px;
+  top: 20px;
+  right: 20px;
   background: #99e2d0;
   color: #008766;
   padding: 7px 10px;
 }
 
-.section2 .card1__divHeading {
+.section2 .card1 .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section2 .card1 .test__divHeading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,16 +422,20 @@ header .heading__bouton {
   margin-top: 10px;
 }
 
-.section2 .card1__divHeading--sHeading {
+.section2 .card1 .test__divHeading--sHeading {
   margin-top: 5px;
 }
 
-.section2 .card1__divHeading img {
-  width: 25px;
-  height: 30px;
+.section2 .card1 .test__heart {
   position: relative;
-  left: 270px;
-  bottom: 35px;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+.section2 .card1 .test__heart:hover {
+  background: #9356dc;
 }
 
 .section2 .card2 {
@@ -405,8 +456,25 @@ header .heading__bouton {
   color: black;
 }
 
+.section2 .card2:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+}
+
 .section2 .card2__images {
   background-image: url(../Maquettes/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -418,14 +486,23 @@ header .heading__bouton {
 
 .section2 .card2__images--nouveau {
   position: relative;
-  left: 240px;
-  top: 25px;
+  top: 20px;
+  right: 20px;
   background: #99e2d0;
   color: #008766;
   padding: 7px 10px;
 }
 
-.section2 .card2__divHeading {
+.section2 .card2 .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section2 .card2 .test__divHeading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,16 +514,16 @@ header .heading__bouton {
   margin-top: 10px;
 }
 
-.section2 .card2__divHeading--sHeading {
+.section2 .card2 .test__divHeading--sHeading {
   margin-top: 5px;
 }
 
-.section2 .card2__divHeading img {
-  width: 25px;
-  height: 30px;
+.section2 .card2 .test__heart {
   position: relative;
-  left: 270px;
-  bottom: 35px;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 .section2 .card3 {
@@ -467,8 +544,25 @@ header .heading__bouton {
   color: black;
 }
 
+.section2 .card3:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+}
+
 .section2 .card3__images {
   background-image: url(../Maquettes/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -478,7 +572,16 @@ header .heading__bouton {
   background-position: 50% 50%;
 }
 
-.section2 .card3__divHeading {
+.section2 .card3 .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section2 .card3 .test__divHeading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,16 +593,16 @@ header .heading__bouton {
   margin-top: 10px;
 }
 
-.section2 .card3__divHeading--sHeading {
+.section2 .card3 .test__divHeading--sHeading {
   margin-top: 5px;
 }
 
-.section2 .card3__divHeading img {
-  width: 25px;
-  height: 30px;
+.section2 .card3 .test__heart {
   position: relative;
-  left: 270px;
-  bottom: 35px;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 .section2 .card4 {
@@ -520,8 +623,25 @@ header .heading__bouton {
   color: black;
 }
 
+.section2 .card4:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+}
+
 .section2 .card4__images {
   background-image: url(../Maquettes/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
@@ -531,7 +651,16 @@ header .heading__bouton {
   background-position: 50% 50%;
 }
 
-.section2 .card4__divHeading {
+.section2 .card4 .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section2 .card4 .test__divHeading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,16 +672,16 @@ header .heading__bouton {
   margin-top: 10px;
 }
 
-.section2 .card4__divHeading--sHeading {
+.section2 .card4 .test__divHeading--sHeading {
   margin-top: 5px;
 }
 
-.section2 .card4__divHeading img {
-  width: 25px;
-  height: 30px;
+.section2 .card4 .test__heart {
   position: relative;
-  left: 270px;
-  bottom: 35px;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 /*******************FOOTER INDEX *******************/
@@ -617,10 +746,10 @@ header .heading__bouton {
 }
 
 .headerF__flecheLeft {
+  position: relative;
+  right: 85px;
   width: 20px;
   height: 20px;
-  position: relative;
-  right: 90px;
 }
 
 .headerF__logoSite {
@@ -678,6 +807,8 @@ main .menuF .iconeHeart:hover {
   fill: #9356dc;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .menu {
@@ -713,7 +844,7 @@ main .menuF .iconeHeart:hover {
   margin-bottom: 15px;
 }
 
-.menu .barre1, .menu .barre2, .menu .barre3 {
+.menu .barre1, .menu .barre2, .menu .barre3, .menu .barre4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,16 +859,16 @@ main .menuF .iconeHeart:hover {
           animation: animPop 1500ms 3s;
 }
 
-.menu .barre1:hover > .box, .menu .barre2:hover > .box, .menu .barre3:hover > .box {
+.menu .barre1:hover > .box, .menu .barre2:hover > .box, .menu .barre3:hover > .box, .menu .barre4:hover > .box {
   width: 5em;
 }
 
-.menu .barre1:hover > .box .check, .menu .barre2:hover > .box .check, .menu .barre3:hover > .box .check {
+.menu .barre1:hover > .box .check, .menu .barre2:hover > .box .check, .menu .barre3:hover > .box .check, .menu .barre4:hover > .box .check {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 
-.menu .barre1 .namePlat, .menu .barre2 .namePlat, .menu .barre3 .namePlat {
+.menu .barre1 .namePlat, .menu .barre2 .namePlat, .menu .barre3 .namePlat, .menu .barre4 .namePlat {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -754,7 +885,7 @@ main .menuF .iconeHeart:hover {
   white-space: nowrap;
 }
 
-.menu .barre1 .namePlat h3, .menu .barre2 .namePlat h3, .menu .barre3 .namePlat h3 {
+.menu .barre1 .namePlat h3, .menu .barre2 .namePlat h3, .menu .barre3 .namePlat h3, .menu .barre4 .namePlat h3 {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 5px;
@@ -763,7 +894,7 @@ main .menuF .iconeHeart:hover {
   white-space: nowrap;
 }
 
-.menu .barre1 .namePlat .pop, .menu .barre2 .namePlat .pop, .menu .barre3 .namePlat .pop {
+.menu .barre1 .namePlat .pop, .menu .barre2 .namePlat .pop, .menu .barre3 .namePlat .pop, .menu .barre4 .namePlat .pop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,7 +903,7 @@ main .menuF .iconeHeart:hover {
           justify-content: space-between;
 }
 
-.menu .barre1 .namePlat .pop .p1, .menu .barre2 .namePlat .pop .p1, .menu .barre3 .namePlat .pop .p1 {
+.menu .barre1 .namePlat .pop .p1, .menu .barre2 .namePlat .pop .p1, .menu .barre3 .namePlat .pop .p1, .menu .barre4 .namePlat .pop .p1 {
   font-size: 1em;
   font-weight: 100;
   color: rgba(0, 0, 0, 0.7);
@@ -781,13 +912,13 @@ main .menuF .iconeHeart:hover {
   white-space: nowrap;
 }
 
-.menu .barre1 .namePlat .pop .p2, .menu .barre2 .namePlat .pop .p2, .menu .barre3 .namePlat .pop .p2 {
+.menu .barre1 .namePlat .pop .p2, .menu .barre2 .namePlat .pop .p2, .menu .barre3 .namePlat .pop .p2, .menu .barre4 .namePlat .pop .p2 {
   font-size: 1em;
   font-weight: 900;
   margin-left: 10px;
 }
 
-.menu .barre1 .box, .menu .barre2 .box, .menu .barre3 .box {
+.menu .barre1 .box, .menu .barre2 .box, .menu .barre3 .box, .menu .barre4 .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -797,7 +928,7 @@ main .menuF .iconeHeart:hover {
   background-color: #99E2D0;
 }
 
-.menu .barre1 .box .check, .menu .barre2 .box .check, .menu .barre3 .box .check {
+.menu .barre1 .box .check, .menu .barre2 .box .check, .menu .barre3 .box .check, .menu .barre4 .box .check {
   -webkit-transition: -webkit-transform 700ms;
   transition: -webkit-transform 700ms;
   transition: transform 700ms;
@@ -818,6 +949,11 @@ main .menuF .iconeHeart:hover {
 }
 
 .menu .barre3 {
+  -webkit-animation: animPop 2500ms 3s;
+          animation: animPop 2500ms 3s;
+}
+
+.menu .barre4 {
   -webkit-animation: animPop 2500ms 3s;
           animation: animPop 2500ms 3s;
 }
@@ -876,6 +1012,82 @@ main .menuF .iconeHeart:hover {
   border-radius: 20px 20px;
   color: white;
   font-weight: 100;
+}
+
+.btnCommande span:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
+  font-size: 1.1em;
+}
+
+@media screen and (min-width: 1224px) {
+  h1 {
+    text-align: center;
+    font-size: 1.6em;
+  }
+  .section1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .section1 .box_choix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 20px;
+  }
+  .section1 .box_choix .choix {
+    width: 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.2em;
+  }
+  .section2 {
+    margin-top: 30px;
+  }
+  .section2__header {
+    text-align: center;
+  }
+  .headerF__flecheLeft {
+    right: 850px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .headerF__flecheLeft {
+    right: 65px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .headerF__flecheLeft {
+    right: 95px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .headerF__flecheLeft {
+    right: 115px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headerF__flecheLeft {
+    right: 285px;
+  }
 }
 
 /* .button{
