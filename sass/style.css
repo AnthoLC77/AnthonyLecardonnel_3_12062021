@@ -427,16 +427,91 @@ header .heading__bouton:hover {
   margin-top: 5px;
 }
 
-.section2 .card1 .test__heart {
+.section2 .card1 .test .icon_heart {
+  width: 33px;
+  height: 33px;
   position: relative;
-  top: 20px;
-  right: 20px;
-  width: 25px;
-  height: 25px;
 }
 
-.section2 .card1 .test__heart:hover {
-  background: #9356dc;
+.section2 .card1 .test .icon_heart_fond {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-size: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 1;
+}
+
+.section2 .card1 .test .icon_heart_dessus {
+  /*transform: scale(0);*/
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  font-size: 25px;
+  position: absolute;
+  display: block;
+  color: #9356dc;
+  visibility: visible;
+  right: 20px;
+  top: 20px;
+  opacity: 0;
+}
+
+.section2 .card1 .test .icon_heart:hover .icon_heart_dessus {
+  -webkit-animation: coeur 500ms forwards;
+          animation: coeur 500ms forwards;
+  /*
+            transform : scale(1);
+            transition : transform 800ms ;
+            transform-origin: bottom;*/
+}
+
+.section2 .card1 .test .icon_heart:hover .icon_heart_fond {
+  opacity: 0;
+}
+
+@-webkit-keyframes coeur {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes coeur {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .section2 .card2 {
@@ -519,12 +594,49 @@ header .heading__bouton:hover {
   margin-top: 5px;
 }
 
-.section2 .card2 .test__heart {
+.section2 .card2 .test .icon_heart {
+  width: 33px;
+  height: 33px;
   position: relative;
+}
+
+.section2 .card2 .test .icon_heart_fond {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-size: 25px;
+  position: absolute;
   top: 20px;
   right: 20px;
-  width: 25px;
-  height: 25px;
+  opacity: 1;
+}
+
+.section2 .card2 .test .icon_heart_dessus {
+  /*transform: scale(0);*/
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  font-size: 25px;
+  position: absolute;
+  display: block;
+  color: #9356dc;
+  visibility: visible;
+  right: 20px;
+  top: 20px;
+  opacity: 0;
+}
+
+.section2 .card2 .test .icon_heart:hover .icon_heart_dessus {
+  -webkit-animation: coeur 500ms forwards;
+          animation: coeur 500ms forwards;
+  /*
+            transform : scale(1);
+            transition : transform 800ms ;
+            transform-origin: bottom;*/
+}
+
+.section2 .card2 .test .icon_heart:hover .icon_heart_fond {
+  opacity: 0;
 }
 
 .section2 .card3 {
@@ -598,12 +710,49 @@ header .heading__bouton:hover {
   margin-top: 5px;
 }
 
-.section2 .card3 .test__heart {
+.section2 .card3 .test .icon_heart {
+  width: 33px;
+  height: 33px;
   position: relative;
+}
+
+.section2 .card3 .test .icon_heart_fond {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-size: 25px;
+  position: absolute;
   top: 20px;
   right: 20px;
-  width: 25px;
-  height: 25px;
+  opacity: 1;
+}
+
+.section2 .card3 .test .icon_heart_dessus {
+  /*transform: scale(0);*/
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  font-size: 25px;
+  position: absolute;
+  display: block;
+  color: #9356dc;
+  visibility: visible;
+  right: 20px;
+  top: 20px;
+  opacity: 0;
+}
+
+.section2 .card3 .test .icon_heart:hover .icon_heart_dessus {
+  -webkit-animation: coeur 500ms forwards;
+          animation: coeur 500ms forwards;
+  /*
+            transform : scale(1);
+            transition : transform 800ms ;
+            transform-origin: bottom;*/
+}
+
+.section2 .card3 .test .icon_heart:hover .icon_heart_fond {
+  opacity: 0;
 }
 
 .section2 .card4 {
@@ -677,12 +826,49 @@ header .heading__bouton:hover {
   margin-top: 5px;
 }
 
-.section2 .card4 .test__heart {
+.section2 .card4 .test .icon_heart {
+  width: 33px;
+  height: 33px;
   position: relative;
+}
+
+.section2 .card4 .test .icon_heart_fond {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-size: 25px;
+  position: absolute;
   top: 20px;
   right: 20px;
-  width: 25px;
-  height: 25px;
+  opacity: 1;
+}
+
+.section2 .card4 .test .icon_heart_dessus {
+  /*transform: scale(0);*/
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  font-size: 25px;
+  position: absolute;
+  display: block;
+  color: #9356dc;
+  visibility: visible;
+  right: 20px;
+  top: 20px;
+  opacity: 0;
+}
+
+.section2 .card4 .test .icon_heart:hover .icon_heart_dessus {
+  -webkit-animation: coeur 500ms forwards;
+          animation: coeur 500ms forwards;
+  /*
+            transform : scale(1);
+            transition : transform 800ms ;
+            transform-origin: bottom;*/
+}
+
+.section2 .card4 .test .icon_heart:hover .icon_heart_fond {
+  opacity: 0;
 }
 
 /*******************FOOTER INDEX *******************/
@@ -793,23 +979,49 @@ main .menuF__title {
   font-size: 1.6em;
 }
 
-main .menuF .iconeHeart {
+main .menuF .icon_heart {
+  width: 33px;
+  height: 33px;
   position: relative;
-  right: 30px;
-  width: 25px;
-  fill: transparent;
-  stroke-width: 10px;
-  stroke: black;
-  overflow: hidden;
-  z-index: 0;
 }
 
-main .menuF .iconeHeart:hover {
-  fill: #9356dc;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  -webkit-transform-origin: top;
-          transform-origin: top;
+main .menuF .icon_heart_fond {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-size: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 1;
+}
+
+main .menuF .icon_heart_dessus {
+  /*transform: scale(0);*/
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  font-size: 25px;
+  position: absolute;
+  display: block;
+  color: #9356dc;
+  visibility: visible;
+  right: 20px;
+  top: 20px;
+  opacity: 0;
+}
+
+main .menuF .icon_heart:hover .icon_heart_dessus {
+  -webkit-animation: coeur 500ms forwards;
+          animation: coeur 500ms forwards;
+  /*
+            transform : scale(1);
+            transition : transform 800ms ;
+            transform-origin: bottom;*/
+}
+
+main .menuF .icon_heart:hover .icon_heart_fond {
+  opacity: 0;
 }
 
 .menu {
