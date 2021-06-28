@@ -64,12 +64,12 @@ body{
 
 .container{
     opacity: 1;
-    animation: popBody 1s linear 0s;
+    animation: popBody 3s linear 0s;
 }
 
 .containerR{
     opacity: 1;
-    animation: popBody 1s linear 0s;
+    animation: popBody 3s linear 0s;
     background: #f6f6f6;
 
 }
@@ -83,7 +83,8 @@ body{
 /**********************LOADER ALL PAGES ******************/
 
 .loader{
-    position: absolute;
+    position: fixed;
+    z-index: -1;
     width: 100%;
     height: 100%;
     background: $color-primaire;
@@ -91,7 +92,7 @@ body{
     justify-content: center;
     align-items: center;
     opacity: 0;
-    animation: spin 1s;
+    animation: spin 3s;
 }
 
 .lettre{
