@@ -32,57 +32,8 @@
             text-align: center;
         }
     }
-
-    .headerF{
-        &__flecheLeft{
-            right: 850px;
-        }
-    }
 }
 
-@media screen and (min-width : 320px){
-    .headerF{
-        
-        &__flecheLeft{
-            right: 65px;
-            
-            
-        }
-    }
-}
-
-@media screen and (min-width : 375px){
-    .headerF{
-        
-        &__flecheLeft{
-            right: 95px;
-            
-            
-        }
-    }
-}
-
-@media screen and (min-width : 425px){
-    .headerF{
-        
-        &__flecheLeft{
-            right: 115px;
-            
-            
-        }
-    }
-}
-
-@media screen and (min-width : 768px){
-    .headerF{
-        
-        &__flecheLeft{
-            right: 285px;
-            
-            
-        }
-    }
-}
 
 
 
