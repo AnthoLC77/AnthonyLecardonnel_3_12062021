@@ -172,7 +172,7 @@ header{
     flex-direction: column;
     justify-content: center;
     
-        h1{
+        h2{
             margin: 0 0 15px 15px;
         }
 
@@ -233,6 +233,7 @@ header{
     &__header{
         grid-row: 1;
         grid-template: 1;
+        
     }
 
     .card1{

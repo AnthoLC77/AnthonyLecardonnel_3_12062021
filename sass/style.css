@@ -336,7 +336,7 @@ header .heading__bouton:hover {
           justify-content: center;
 }
 
-.section1 h1 {
+.section1 h2 {
   margin: 0 0 15px 15px;
 }
 
@@ -1237,7 +1237,7 @@ main .menuF .icon_heart:hover .icon_heart_fond {
 }
 
 @media screen and (min-width: 1224px) {
-  h1 {
+  .titre_index {
     text-align: center;
     font-size: 1.6em;
   }
