@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="P3_04_SASS/style.css">
+    <script src="https://kit.fontawesome.com/0c2033016f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Accueil Ohmyfood</title>
+</head>
+<body>
+    <div class="loader">
+        <span class="lettre">C</span>
+        <span class="lettre">H</span>
+        <span class="lettre">A</span>
+        <span class="lettre">R</span>
+        <span class="lettre">G</span>
+        <span class="lettre">E</span>
+        <span class="lettre">M</span>
+        <span class="lettre">E</span>
+        <span class="lettre">N</span>
+        <span class="lettre">T</span>
+    </div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img class="logo__img" src="P3_05_images/logo/ohmyfood@2x.svg" alt="ohMyFood">
+            </div>
+        
+            <div class="position">
+                <img class="position__icone" src="P3_06_icone/map-marker-alt-solid.svg" alt="iconeMap">
+                <span class="position__lieu">Paris, Belleville</span>
+            </div>
+        
+            <div class="heading">
+                <h1 class="heading__title">Réservez le menu qui vous convient</h1>
+                <p class="heading__para">Découvrez des restaurants d'exception,<br> séléctionnés par nos soins</p>
+                <div class="heading__bouton">Explorer nos restaurants</div>
+            </div>
+        </header>
+
+        <section class="section1">
+                <h2 class="titre_index">Fonctionnement</h2>
+                <div class="box_choix">
+                    <div class="choix">
+                        <span class="choix__number">1</span>
+                        <img class="choix__image" src="P3_06_icone/mobile-alt-solid.png" alt="">
+                        <h3 class="choix__heading">Choisissez un restaurant</h3>
+                    </div>
+
+                    <div class="choix">
+                        <span class="choix__number">2</span>
+                        <img class="choix__image" src="P3_06_icone/list-ul-solid.png" alt="">
+                        <h3 class="choix__heading">Composez votre menu</h3>
+                    </div>
+
+                    <div class="choix choix--background">
+                        <span class="choix__number">3</span>
+                        <img class="choix__image" src="P3_06_icone/store-solid.png" alt="">
+                        <h3 class="choix__heading">Dégustez au restaurant</h3>
+                    </div>  
+                </div>
+        </section>
+
+        <section class="section2">
+                <h2 class="section2__header">Restaurants</h2>
+                    <a href="P3_03_HTML/palette_du_goût.html" class="card1">
+                        <div class="card1__images">
+                            <span class="card1__images--nouveau">Nouveau</span>
+                        </div>
+
+                        <div class="test">
+                            <div class="test__divHeading">
+                                <h3 class="test__heading">La palette du goût</h3>
+                                <span class="test__divHeading--sHeading">Ménilmontant</span>
+                            </div>
+                            <div class="icon_heart">
+                                <i class=" icon_heart_fond far fa-heart"></i>
+                                <i class="icon_heart_dessus fas fa-heart"></i>
+                            </div>
+                        </div> 
+                    </a>
+
+                    <a href="P3_03_HTML/note_enchantée.html" class="card2">
+                        <div class="card2__images">
+                            <span class="card2__images--nouveau">Nouveau</span>    
+                        </div>
+                        <div class="test">
+                            <div class="test__divHeading">
+                                <h3 class="test__heading">La note enchantée</h3>
+                                <span class="test__divHeading--sHeading">Charonne</span>
+                            </div>    
+                            <div class="icon_heart">
+                                <i class=" icon_heart_fond far fa-heart"></i>
+                                <i class="icon_heart_dessus fas fa-heart"></i>
+                            </div>
+                        </div>  
+                    </a>
+
+                    <a href="P3_03_HTML/menu_français.html" class="card3">
+                        <div class="card3__images"></div>
+                        <div class="test">
+                            <div class="test__divHeading">
+                                <h3 class="test__heading">À la française</h3>
+                                <span class="test__divHeading--sHeading">Cité Rouge</span>
+                            </div>    
+                            <div class="icon_heart">
+                                <i class=" icon_heart_fond far fa-heart"></i>
+                                <i class="icon_heart_dessus fas fa-heart"></i>
+                            </div>
+                        </div>  
+                    </a>
+
+                    <a href="P3_03_HTML/delice_des_sens.html" class="card4">
+                        <div class="card4__images"></div>
+                        <div class="test">
+                            <div class="test__divHeading">
+                                <h3 class="test__heading">Le délice des sens</h3>
+                                <span class="test__divHeading--sHeading">Folie-Méricourt</span>
+                            </div>    
+                            <div class="icon_heart">
+                                <i class=" icon_heart_fond far fa-heart"></i>
+                                <i class="icon_heart_dessus fas fa-heart"></i>
+                            </div>
+                        </div>   
+                    </a>
+        </section>
+
+        <footer class="footer footer--color">
+            <img class="footer__images" src="P3_05_images/logo/ohmyfoodWhite.png" alt="ohMyFood">
+
+
+
+            <div class="footer__div">
+                <img src="P3_06_icone/utensils-solid.png" alt="">
+                <a class="footer__lien"  href="#">Proposer un restaurant</a>
+            </div>
+
+            <div class="footer__div">
+                <img class="footer__div--rotation" src= "P3_06_icone/handshake-regular.png" alt="">
+                <a class="footer__lien" href="#">Devenir partenaire</a>
+            </div>
+
+            <a class="footer__lien" href="#">Mentions légales</a>
+            <a class="footer__lien" href="mailto:adresse@serveur.Com">Contact</a>
+        </footer>
+        
+    </div>
+</body>
+</html>
