@@ -1,0 +1,69 @@
+@keyframes flash {
+  0% {
+    color: $color-secondaire;
+    text-shadow: 0 0 7px $color-secondaire;
+  }
+
+  90% {
+    color: black;
+    text-shadow: none;
+  }
+
+  100% {
+    color: $color-secondaire;
+    text-shadow: 0 0 7px $color-secondaire;
+  }
+}
+
+@keyframes spin {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes popBody {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animPop {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes coeur {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
